@@ -1,10 +1,9 @@
-import express from "express";
+import express ,{ Application } from "express";
+
 import dotenv from "dotenv";
 
 dotenv.config();
-
-const app = express();
-
+const app: Application = express();
 app.use(express.json());
 
-export default app;
+export default app ;
